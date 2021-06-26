@@ -1,4 +1,4 @@
-{% set version = '1.0' %}
+{% set version = "2.2" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,12 +11,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/mbsts_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/mbsts/mbsts_{{ version }}.tar.gz
-  sha256: c50c45fb8db7a6e1915b5a96671cc4d6c566c4e2bb63a7087fb44df002a46f72
+  sha256: ab4547397754fe6663ae5b61a80e87555304df488510f0e69d701f61e4fe511f
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   noarch: generic
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -53,11 +53,10 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=mbsts
-  summary: Multivariate time series regression using dynamic linear models fit by MCMC. See Qiu,
-    Jammalamadaka and Ning (2018) <http://www.jmlr.org/papers/volume19/18-009/18-009.pdf>.
+  summary: Multivariate time series regression using dynamic linear models fit by MCMC. See Qiu, Jammalamadaka and Ning (2018) <http://www.jmlr.org/papers/volume19/18-009/18-009.pdf>.
   license: LGPL-2.1-only
   license_family: LGPL
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-2.1'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-2.1
 
 extra:
   recipe-maintainers:
