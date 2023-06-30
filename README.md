@@ -1,11 +1,11 @@
-About r-mbsts
-=============
+About r-mbsts-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-mbsts-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=mbsts
 
 Package license: LGPL-2.1-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-mbsts-feedstock/blob/main/LICENSE.txt)
 
 Summary: Multivariate time series regression using dynamic linear models fit by MCMC. See Qiu, Jammalamadaka and Ning (2018) <http://www.jmlr.org/papers/volume19/18-009/18-009.pdf>.
 
