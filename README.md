@@ -144,5 +144,4 @@ Feedstock Maintainers
 =====================
 
 * [@conda-forge/r](https://github.com/orgs/conda-forge/teams/r/)
-* [@melonhead901](https://github.com/melonhead901/)
 
